@@ -1,32 +1,15 @@
-// importar o Scanner para imprimir os dados
-import java.util.Scanner;
+//Desafio da aula 01/04/2024:
+//- Crie um programa que armazene os seguintes dados: nome do funcionário, salário e cargo e imprima no console os 3 valores;
 
-public class App {
-    // informar o método de entrada de dados
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        
-        // Inserir o nome do funcionário
-        System.out.print("Insira o nome do funcionário: ");
-        String nomeFuncionario = scanner.nextLine();
-        
-        // Inserir o salário do funcionário
-        System.out.print("Insira o salário do funcionário: R$ ");
-        double salarioFuncionario = scanner.nextDouble();
-        
-        // Avançar para a próxima linha
-        scanner.nextLine();
-        
-        // Inserir o cargo do funcionário
-        System.out.print("Insira o cargo do funcionário: ");
-        String cargoFuncionario = scanner.nextLine();
-        
-        // Imprimindo os dados inseridos
+public class funcionarios {
+
+    static String nomeFuncionario = "José da Silva";
+    static String cargoFuncionario = "Analista de dados";
+    static double salarioTFuncionario =  12500.00;
+
+    public static void main(String[] args) throws Exception {
         System.out.println("Nome do funcionário: " + nomeFuncionario);
-        System.out.println("Salário do funcionário: R$" + salarioFuncionario);
-        System.out.println("Cargo do funcionário: " + cargoFuncionario);
-              
-        // Fechar o scanner
-        scanner.close();
+        System.out.println("Cargo: " + cargoFuncionario);
+        System.out.println("Salário: R$ " + salarioTFuncionario);
     }
 }
